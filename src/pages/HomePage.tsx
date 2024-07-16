@@ -10,7 +10,7 @@ const HomePage = () => {
 
   return (
     <div className="flex items-center justify-center w-full h-screen dark:bg-dark ">
-      <Button onClick={handleNavigate}>Start the Chat</Button>
+      <Button onClick={handleNavigate}>Start the Chat Bot</Button>
     </div>
   );
 };
