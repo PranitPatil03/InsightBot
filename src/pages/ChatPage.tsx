@@ -9,12 +9,12 @@ import Chat from "../components/Chat";
 const ChatPage = () => {
   return (
     <div className="flex items-center justify-center w-full h-screen">
-      <ResizablePanelGroup direction="horizontal">
-        <ResizablePanel defaultSize={18} maxSize={18} minSize={18}>
+      <ResizablePanelGroup direction="horizontal" className="w-full">
+        <ResizablePanel defaultSize={15} maxSize={15} minSize={15}>
           <SideBar />
         </ResizablePanel>
-        <ResizableHandle withHandle />
-        <ResizablePanel>
+        <ResizableHandle />
+        <ResizablePanel className="flex items-center justify-center w-full">
           <Chat></Chat>
         </ResizablePanel>
       </ResizablePanelGroup>
